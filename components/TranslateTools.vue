@@ -41,11 +41,13 @@ export default {
       const loadingComponent = this.$buefy.loading.open()
       var response1 = await this.$fetcher.post("/api/pcr/getNameList", {});
       this.data = response1.data;
+      this.data.sort((a, b) => (b.name.length > a.name.length) ? 1 : ((a.name.length > b.name.length) ? -1 : 0))
+      console.log(this.data);
       loadingComponent.close()
 
       let copyText = this.originalText;
       copyText = copyText.replaceAll("オート", "Auto ");
-      copyText = copyText.replaceAll("オフト", "off");
+      copyText = copyText.replaceAll("オフ", "off");
       copyText = copyText.replaceAll("オン", "on");
       copyText = copyText.replaceAll("解除", "Off");
       copyText = copyText.replaceAll("目押しなし", "0目押");
@@ -86,7 +88,7 @@ export default {
               text[i] = `[${splitLine[0]}]\t${splitLine[1].padEnd(5, "　")}${otherText}`;
             }
           } else {
-            text[i] = "\t" + text[i];
+            text[i] = "\t\t" + text[i];
           }
 
           newText += text[i] + "\n";
