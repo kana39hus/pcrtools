@@ -1,0 +1,251 @@
+.nuxt-link-exact-active {
+  color: var(--tiffany)
+}
+
+.Tag .tags {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+:root {
+  --tiffany: #8cbdb9;
+  --tiffany-hover: #6a9995;
+  --navy: #2d3e4e;
+  --light-tiffany: #c7e0df;
+  --light-tiffany-hover: rgb(144, 187, 186);
+  --mist: #e8eceb;
+}
+
+div.instructor {
+  font-family: "Nunito", sans-serif;
+  color: #000000;
+}
+
+.card-header {
+  background-color: var(--tiffany);
+}
+
+.card-header-title {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: var(--navy);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-weight: 700;
+  padding: 0.75rem 1rem;
+  font-size: 16px;
+}
+
+.card-header.is-success {
+  background-color: rgb(93, 238, 93);
+}
+
+.card-header.is-danger {
+  background-color: rgb(255, 79, 79);
+}
+
+.card-header.is-tiffany.is-light {
+  background-color: #d1dad9;
+}
+
+.b-tooltip.is-transparent .tooltip-content {
+  background: transparent;
+  color: #fff;
+ 
+}
+
+.b-tooltip.is-tiffany .tooltip-content {
+  background: var(--light-tiffany);
+  color: var(--navy);
+}
+
+.b-tooltip.Popup-windows .tooltip-content {
+  min-width: fit-content;
+  max-width: none;
+  width: auto;
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 400;
+  -webkit-box-shadow: 0px 1px 2px 1px rgb(0 1 0 / 0%); 
+  box-shadow: 0px 1px 2px 1px rgb(0 1 0 / 0%); 
+  z-index: 38;
+  white-space: nowrap;
+  position: absolute;
+  display: block;
+  right: 0;
+  transform: translateX(calc(-100% - 100px));
+}
+
+.button.is-mist {
+  background-color: var(--mist);
+  border-color: transparent;
+  color: var(--navy);
+}
+
+.button.is-tiffany {
+  background-color: var(--tiffany);
+  border-color: transparent;
+  color: var(--navy);
+}
+
+.button.is-tiffany.is-light {
+  background-color: var(--light-tiffany);
+  border-color: transparent;
+  color: var(--navy)
+}
+
+.button.is-tiffany:hover,
+.button.is-tiffany.is-hovered {
+  background-color: var(--tiffany-hover);
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-tiffany.is-light:hover,
+.button.is-tiffany.is-light.is-hovered,
+.button.is-mist:hover,
+.button.is-mist.is-hovered {
+  background-color: var(--light-tiffany-hover);
+  border-color: transparent;
+  color: #fff;
+}
+
+.b-slider.is-tiffany .b-slider-fill {
+  background: var(--light-tiffany) !important;
+}
+
+.table tr.is-selected {
+  background-color: var(--tiffany);
+  color: var(--navy);
+}
+
+.tabs.is-toggle li.is-active a {
+  background-color: var(--tiffany);
+  border-color: var(--tiffany);
+  color: var(--navy);
+  z-index: 1;
+}
+
+.b-tabs .tabs.is-toggle li a:focus {
+  background-color: var(--tiffany);
+  border-color: var(--tiffany);
+}
+
+.tag:not(body).is-navy {
+  background-color: var(--navy);
+  color: #fff;
+}
+
+.button.is-navy {
+  background-color: var(--navy);
+  border-color: transparent;
+  color: #fff;
+}
+
+.tag:not(body).is-tiffany.is-light {
+  background-color: var(--light-tiffany);
+  color: var(--navy);
+}
+
+
+.tag:not(body).is-tiffany {
+  background-color: var(--light-tiffany);
+  color: var(--navy);
+}
+
+.b-checkbox.checkbox input[type=checkbox]:checked+.check.is-tiffany {
+  background: var(--light-tiffany) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3Cpath style='fill:%23fff' d='M 0.04038059,0.6267767 0.14644661,0.52071068 0.42928932,0.80355339 0.3232233,0.90961941 z M 0.21715729,0.80355339 0.85355339,0.16715729 0.95961941,0.2732233 0.3232233,0.90961941 z'%3E%3C/path%3E%3C/svg%3E") no-repeat center center;
+  border-color: var(--light-tiffany);
+}
+
+.b-steps .steps .step-items .step-item.is-tiffany.is-active .step-marker {
+  background-color: white;
+  border-color: var(--tiffany);
+  color: var(--tiffany);
+}
+
+.b-steps .steps .step-items .step-item.is-tiffany::before,
+.b-steps .steps .step-items .step-item.is-info::after {
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #dbdbdb), color-stop(50%, var(--tiffany)));
+  background: linear-gradient(to left, #dbdbdb 50%, var(--tiffany) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+
+.b-steps .steps .step-items .step-item.is-tiffany.is-previous .step-marker {
+  color: #fff;
+  background-color: var(--tiffany);
+}
+
+
+.switch input[type=checkbox]:checked+.check.is-tiffany {
+  background: var(--light-tiffany);
+}
+
+.switch:hover input[type=checkbox]:checked+.check.is-tiffany {
+  background: var(--tiffany);
+}
+
+.dropdown-content {
+  background-color: white;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0px 0 1px rgb(10 10 10 / 2%);
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0px 0 1px rgb(10 10 10 / 2%);
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.select-cus select {
+  text-rendering: auto !important;
+  padding-right: 2.5em;
+  background: var(--tiffany) !important;
+  border: var(--tiffany);
+  font-weight: bold;
+}
+
+.select-cus-light select {
+  text-rendering: auto !important;
+  padding-right: 2.5em;
+  background: var(--light-tiffany) !important;
+  border: var(--light-tiffany);
+  font-weight: bold;
+}
+
+.select-cus .icon {
+  color: var(--navy) !important;
+}
+
+.option-cus {
+  background: #FFFFFF !important;
+  font-size: large;
+}
+
+.b-table .table .chevron-cell>a {
+  color: var(--navy) !important;
+}
+
+.select:not(.is-multiple):not(.is-loading)::after {
+  border-color: var(--navy);
+  right: 1.125em;
+  z-index: 4;
+}
+
+.menu-list a {
+  border-radius: 2px;
+  color: #333333;
+  display: block;
+  padding: 0.5em 0.75em;
+}
+
+.menu-list a.is-active {
+  background: #8cbdb9;
+}
+
