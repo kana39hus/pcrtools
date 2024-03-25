@@ -1,6 +1,7 @@
 import pkg from './package.json'
 
 export default {
+  target: 'static',
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
@@ -95,6 +96,7 @@ export default {
 
   router: {
     //middleware: ['auth']
+    base: '/pcrtools/'
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
