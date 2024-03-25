@@ -7,6 +7,7 @@ export default ({ app }, inject) => {
         },
         async post(api, request) {
             try {
+                console.log(api);
                 var response = await fetch(api, {
                     method: "POST",
                     headers: {
@@ -15,7 +16,9 @@ export default ({ app }, inject) => {
                     body: JSON.stringify(request),
                 });
 
+            
                 var data = await response.json()
+                console.log(data);
                 if (response.status == 404) {
                     return { status: response.status, response: response, data: undefined };
                 }

@@ -1,4 +1,4 @@
-import pkg from './package.json'
+
 
 export default {
   target: 'static',
@@ -96,17 +96,12 @@ export default {
 
   router: {
     //middleware: ['auth']
-    base: '/pcrtools/'
   },
+
+  
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
 
-  serverMiddleware: [
-    '~/api/index.js'
-  ],
-
-  publicRuntimeConfig: {
-    clientVersion: pkg.version,
-  }
 }
+
